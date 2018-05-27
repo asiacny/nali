@@ -1,3 +1,20 @@
 编译和安装请看INSTALL
 
 项目主页：http://www.surfchen.org/wiki/Nali
+
+
+
+wget https://github.com/asiacny/nali/blob/master/nali-0.2.tar.gz?raw=true
+tar zxvf nali-0.2.tar*
+cd nali-0.2/
+./configure
+make
+sudo make install
+
+更新ip库 https://github.com/WisdomFusion/qqwry.dat
+wget https://github.com/WisdomFusion/qqwry.dat/blob/master/20180510/qqwry.dat?raw=true -O /usr/local/share/QQWry.Dat
+
+用法：
+mtr -n www.qq.com | nali
+ping www.baidu.com |nali
+nali-ping
